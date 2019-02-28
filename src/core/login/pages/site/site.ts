@@ -20,6 +20,7 @@ import { CoreDomUtilsProvider } from '@providers/utils/dom';
 import { CoreConfigConstants } from '../../../../configconstants';
 import { CoreLoginHelperProvider } from '../../providers/helper';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { connect } from 'net';
 
 /**
  * Page to enter or select the site URL to connect to.
@@ -36,6 +37,12 @@ export class CoreLoginSitePage {
     fixedDisplay = 'buttons';
     showKeyboard = false;
     filter = '';
+
+    ionViewWillEnter(): void {
+
+        let url = 'http://210.245.89.221/moodle';
+        this.connectWithLink(url);
+    }
 
     constructor(navParams: NavParams, private navCtrl: NavController, fb: FormBuilder, private appProvider: CoreAppProvider,
             private sitesProvider: CoreSitesProvider, private loginHelper: CoreLoginHelperProvider,
@@ -72,6 +79,11 @@ export class CoreLoginSitePage {
         e.preventDefault();
         e.stopPropagation();
 
+        this.connectWithLink(url);
+    }
+
+
+    connectWithLink(url: string) {
         this.appProvider.closeKeyboard();
 
         if (!url) {
