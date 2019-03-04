@@ -130,7 +130,7 @@ export const IONIC_NATIVE_PROVIDERS = [
             useFactory: (appProvider: CoreAppProvider, textUtils: CoreTextUtilsProvider, mimeUtils: CoreMimetypeUtilsProvider)
                     : File => {
                 // Use platform instead of CoreAppProvider to prevent circular dependencies.
-                return appProvider.isMobile() ? new File() : new FileMock(appProvider, textUtils, mimeUtils);
+                return appProvider.isMobile() ? new File() : new File();
             }
         },
         {

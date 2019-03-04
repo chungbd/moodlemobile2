@@ -391,10 +391,13 @@ export class FileMock extends File {
             } else {
                 // It's browser, request a quota to use. Request 500MB.
                 (<any> navigator).webkitPersistentStorage.requestQuota(500 * 1024 * 1024, (granted) => {
-                    window.requestFileSystem(LocalFileSystem.PERSISTENT, granted, (entry) => {
+                    win.requestFileSystem(LocalFileSystem.PERSISTENT, granted, (entry) => {
                         basePath = entry.root.toURL();
                         resolve(basePath);
                     }, reject);
+// tslint:disable-next-line: comment-format
+                    // document.addEventListener('deviceready', () => {
+                    // }, false);
                 }, reject);
             }
 
