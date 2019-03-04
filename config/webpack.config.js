@@ -36,7 +36,10 @@ const customConfig = {
   }
 };
 
+const mergeDev = webpackMerge(dev, customConfig);
+const mergeProd = webpackMerge(prod, customConfig);
+
 module.exports = {
-  dev: webpackMerge(dev, customConfig),
-  prod: webpackMerge(prod, customConfig),
+  dev: mergeDev,
+  prod: mergeDev,
 }

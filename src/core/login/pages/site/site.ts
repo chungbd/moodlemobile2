@@ -39,8 +39,7 @@ export class CoreLoginSitePage {
     filter = '';
 
     ionViewWillEnter(): void {
-
-        let url = 'http://210.245.89.221/moodle';
+        const url = 'http://210.245.89.221/moodle';
         this.connectWithLink(url);
     }
 
@@ -82,8 +81,7 @@ export class CoreLoginSitePage {
         this.connectWithLink(url);
     }
 
-
-    connectWithLink(url: string) {
+    connectWithLink(url: string): void {
         this.appProvider.closeKeyboard();
 
         if (!url) {

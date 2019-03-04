@@ -100,7 +100,7 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
 
     // Default values.
     var ssoScheme = 'moodlemobile',
-        appId = 'com.moodle.moodlemobile';
+        appId = 'com.hoanghung.moodlemobile';
 
     if (!err) {
         try {
