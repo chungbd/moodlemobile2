@@ -28,7 +28,8 @@ $green:           #5e8100; // Accent.
 $red:             #cb3d4d;
 $orange:          #f98012; // Accent (never text).
 $yellow:          #fbad1a; // Accent (never text).
-$core-color:      $orange;
+$main-color:      #20897b; // Accent (never text).
+$core-color:      $main-color;
 
 // Branded apps customization
 // --------------------------------------------------
@@ -116,7 +117,7 @@ $button-md-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 
 
 $refresher-icon-color: $core-color !default;
 
-$core-online-color: #5cb85c;
+$core-online-color: $main-color;
 
 $core-select-placeholder-color: $core-color !default;
 $item-avatar-size: 54px !default;
@@ -131,8 +132,8 @@ $item-divider-color: $black !default;
 // --------------------------------------------------
 
 // Init screen.
-$core-color-init-screen:          #ff5c00 !default;
-$core-color-init-screen-alt:      #ff7600 !default;
+$core-color-init-screen:          $main-color !default;
+$core-color-init-screen-alt:      $main-color !default;
 $core-init-screen-spinner-color:  $white !default;
 $core-init-screen-logo-width:     60% !default;
 $core-init-screen-logo-max-width: 300px !default;

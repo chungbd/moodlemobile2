@@ -1,10 +1,10 @@
 {
     "android": {
         "debug": {
-            "keystore":"~/Documents/key_store/",
-            "storePassword": "android",
-            "alias": "mykey1",
-            "password" : "password",
+            "keystore":"~/Documents/key_store/key_moodle",
+            "storePassword": "123456",
+            "alias": "key_moodle",
+            "password" : "1234567",
             "keystoreType": ""
         },
         "release": {

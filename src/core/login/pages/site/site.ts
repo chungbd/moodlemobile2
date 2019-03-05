@@ -38,11 +38,6 @@ export class CoreLoginSitePage {
     showKeyboard = false;
     filter = '';
 
-    ionViewWillEnter(): void {
-        const url = 'http://210.245.89.221/moodle';
-        this.connectWithLink(url);
-    }
-
     constructor(navParams: NavParams, private navCtrl: NavController, fb: FormBuilder, private appProvider: CoreAppProvider,
             private sitesProvider: CoreSitesProvider, private loginHelper: CoreLoginHelperProvider,
             private modalCtrl: ModalController, private domUtils: CoreDomUtilsProvider) {
