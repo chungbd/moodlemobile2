@@ -36,7 +36,7 @@
             <h2>{{ 'core.settings.versioncode' | translate}}</h2>
             <p>{{ versionCode }}</p>
         </ion-item>
-        <ion-item text-wrap *ngIf="compilationTime || lastCommit">
+        <!-- <ion-item text-wrap *ngIf="compilationTime || lastCommit">
             <h2>{{ 'core.settings.compilationinfo' | translate }}</h2>
             <p *ngIf="compilationTime">{{ compilationTime | coreFormatDate: "LLL Z": false }}</p>
             <p *ngIf="lastCommit">{{ lastCommit }}</p>
@@ -65,7 +65,7 @@
         <ion-item text-wrap *ngIf="deviceType">
             <h2>{{ 'core.settings.displayformat' | translate}}</h2>
             <p>{{ deviceType | translate }}</p>
-        </ion-item>
+        </ion-item> -->
         <ion-item text-wrap *ngIf="deviceOs">
             <h2>{{ 'core.settings.deviceos' | translate}}</h2>
             <p>{{ deviceOs | translate }}</p>
@@ -82,15 +82,15 @@
             <h2>{{ 'core.settings.wificonnection' | translate}}</h2>
             <p>{{ wifiConnection | translate }}</p>
         </ion-item>
-        <ion-item text-wrap *ngIf="deviceWebWorkers">
+        <!-- <ion-item text-wrap *ngIf="deviceWebWorkers">
             <h2>{{ 'core.settings.devicewebworkers' | translate}}</h2>
             <p>{{ deviceWebWorkers | translate }}</p>
-        </ion-item>
-        <ion-item text-wrap *ngIf="device && device.cordova">
+        </ion-item> -->
+        <!-- <ion-item text-wrap *ngIf="device && device.cordova">
             <h2>{{ 'core.settings.cordovaversion' | translate}}</h2>
             <p>{{ device.cordova }}</p>
-        </ion-item>
-        <ion-item text-wrap *ngIf="device && device.platform">
+        </ion-item> -->
+        <!-- <ion-item text-wrap *ngIf="device && device.platform">
             <h2>{{ 'core.settings.cordovadeviceplatform' | translate}}</h2>
             <p>{{ device.platform }}</p>
         </ion-item>
@@ -101,7 +101,7 @@
         <ion-item text-wrap *ngIf="device && device.model">
             <h2>{{ 'core.settings.cordovadevicemodel' | translate}}</h2>
             <p>{{ device.model }}</p>
-        </ion-item>
+        </ion-item> -->
         <ion-item text-wrap *ngIf="device && device.uuid">
             <h2>{{ 'core.settings.cordovadeviceuuid' | translate}}</h2>
             <p>{{ device.uuid }}</p>
