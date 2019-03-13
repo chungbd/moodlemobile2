@@ -20,7 +20,6 @@ import { CoreDomUtilsProvider } from '@providers/utils/dom';
 import { CoreConfigConstants } from '../../../../configconstants';
 import { CoreLoginHelperProvider } from '../../providers/helper';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { connect } from 'net';
 
 /**
  * Page to enter or select the site URL to connect to.
